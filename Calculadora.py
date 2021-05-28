@@ -3,16 +3,19 @@ def suma(x,y):
     suma = round(suma) 
     print(f"la suma de estos numeros es: {suma}")
 
-x = float(input("inserta un numero"))
-y = float(input("inserta otro"))
-z = int(input("elige una opcion"))
+def resta(x,y):
+    resta = x - y
+    resta = round(resta) 
+    print(f"la resta de estos numeros es: {resta}")
+
+x = float(input("inserta un numero:\n"))
+y = float(input("inserta otro:\n"))
+z = int(input("elige una opcion:\n"))
 
 if z == 0:
     suma(x,y)
 elif z == 1:
-    resta = x - y
-    resta = round(resta)
-    print(f"la resta de estos numeros es: {resta}")
+    resta(x,y)
 elif z == 2:
     multi = x * y
     multi = round(multi)
@@ -20,4 +23,4 @@ elif z == 2:
 elif z == 3: 
     divi = x / y
     divi = round(divi)
-    print(f"la division de estos numeros es{divi}")
+    print(f"la division de estos numeros es: {divi}")
