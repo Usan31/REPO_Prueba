@@ -1,11 +1,14 @@
+def suma(x,y):
+    suma = x + y
+    suma = round(suma) 
+    print(f"la suma de estos numeros es: {suma}")
+
 x = float(input("inserta un numero"))
 y = float(input("inserta otro"))
 z = int(input("elige una opcion"))
 
 if z == 0:
-    suma = x + y
-    suma = round(suma) 
-    print(f"la suma de estos numeros es: {suma}")
+    suma(x,y)
 elif z == 1:
     resta = x - y
     resta = round(resta)
