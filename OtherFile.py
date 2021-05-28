@@ -1,4 +1,12 @@
 def saludo():
-    print("hello world")
+    print("Hola humano")
 
-saludo()
+respuesta = str(input("Quieres que te salude?: "))
+
+if respuesta == "si" or respuesta == "Si"\
+or respuesta == "si " or respuesta == "Si "\
+or respuesta == " si" or respuesta == " Si"\
+or respuesta == " si " or respuesta == " Si ":
+    saludo()
+else: 
+    print("Ta bien")
